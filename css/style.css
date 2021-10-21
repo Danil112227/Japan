@@ -324,8 +324,6 @@ table {
     border-spacing: 0;
 }
 
-/* ----------- */
-
 html,
 button,
 input,
@@ -498,6 +496,37 @@ img{
 }
 .header__link:hover, .header__link:focus, .header__link:active{
     opacity: .75;
+}
+
+.header__burger{
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first{
+    top: 0;
+}
+
+.burger__line_second{
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.burger__line_third{
+    bottom: 0;
 }
 
 /* Header styles end */
